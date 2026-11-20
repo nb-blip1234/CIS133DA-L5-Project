@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Course Name: CIS133DA
+        Section: 27500
+        Lesson: 5
+    -->
+    <meta charset="UTF-8">
+    <title>Nandika's Inline CSS Page</title>
+    <meta name="author" content="Nandika Bhargava">
+    <meta name="keywords" content="inline CSS, CSS font families, CSS color methods, hexadecimal and RGB colors, font shorthand property, font-weight">
+    <meta name="description" content="A demo page showing how to apply inline CSS, including generic font families, font shorthand, font weight, and color names, hex, and RGB values.">
+</head>
+<body>
+    <header style="text-align: center;">
+        <!--
+            The h1 uses the font family "Georgia, 'Times New Roman', serif". If Georgia is not
+            available on the user's computer, the browser will try the next font, Times New Roman.
+            If that one is also missing, it falls back to the generic serif font that the browser
+            or operating system provides by default.
+        -->
+        <h1 style="color: #1b4f72; font-size: 36pt; font-family: Georgia, 'Times New Roman', serif;">Applying Inline CSS</h1>
+        <!--
+            The font-weight property can use three types of values:
+            1. Keyword values: normal or bold
+            2. Relative values: bolder or lighter (compared to the parent element)
+            3. Numeric values: 100 through 900 (400 is the same as normal, 700 is the same as bold)
+        -->
+        <p style="font-weight: bold;"><i>"A mind once stretched by a new idea never regains its original dimensions."</i></p>
+        <!--
+        <nav>
+            <a href="#">Placeholder Link</a>
+        </nav>
+        -->
+    </header>
+    <main>
+        <h2 style="color: darkgreen;">Understanding Generic Font Families</h2>
+        <p style="font: 1.2em Verdana, Arial, Helvetica, sans-serif;">CSS has five generic font families that act as a backup when a specific font is not available. Serif fonts, like Times New Roman, have small strokes (serifs) at the ends of the letters and look traditional, like a printed book. Sans-serif fonts, like Arial, do not have those strokes, so they look clean and modern and are easy to read on screens. Monospace fonts, like Courier New, give every character the same width, which makes them good for showing code. Cursive fonts imitate handwriting, and fantasy fonts are decorative and playful, so both are best used only for small amounts of text such as titles.</p>
+        <h2 style="color: rgb(142, 68, 173);">Ways to Indicate Color</h2>
+        <p style="font: italic 18px 'Courier New', Consolas, monospace;">There are several ways to set a color on a web page or in text. The simplest is a color name, such as red or darkgreen, but there are only about 140 named colors. A hexadecimal value, such as #1b4f72, uses a pound sign followed by six digits that set the amount of red, green, and blue. The RGB method, such as rgb(142, 68, 173), sets red, green, and blue with numbers from 0 to 255. You can also use RGBA to add transparency, or HSL to describe a color by its hue, saturation, and lightness.</p>
+    </main>
+    <footer style="text-align: right;">
+        <p><small>Copyright by Nandika Bhargava &copy; 2026</small></p>
+    </footer>
+</body>
+</html>
